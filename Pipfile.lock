@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8684575dc2e2ee3ef130963dade592c67e470b510ee5ccd3a60920b144ac8e32"
+            "sha256": "2668ffd66576fad63e293e809b484d20ce7f8ba046be69153807a652459b26c1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "blueprint": {
+            "hashes": [
+                "sha256:8bd3066028b953a431355dbed7786740b8f59ba090ffab74a0da41e2c27ed8f7"
+            ],
+            "index": "pypi",
+            "version": "==3.4.2"
+        },
         "click": {
             "hashes": [
                 "sha256:8a18b4ea89d8820c5d0c7da8a64b2c324b4dabb695804dbfea19b9be9d88c0cc",
@@ -44,6 +51,14 @@
                 "sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
             ],
             "version": "==2.11.2"
+        },
+        "mahjong": {
+            "hashes": [
+                "sha256:af3be912f7070a7d28d65f526dc3f1f550117f27f6046a583503a78f11647a8d",
+                "sha256:f1acc366fa201afe26a3c5c3eebb67f33eb97f9b0b5abf5ffe2b9a3eb100e592"
+            ],
+            "index": "pypi",
+            "version": "==1.1.9"
         },
         "markupsafe": {
             "hashes": [
