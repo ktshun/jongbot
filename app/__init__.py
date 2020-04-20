@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask
-from app.controller import slack
+from app.controller import SlackController
 
 
 def create_app(test_config=None):
@@ -13,6 +13,6 @@ def create_app(test_config=None):
     #if "ops_config" in os.environ:
     #    app.config.from_pyfile("config/%s_config.py" % (os.environ['ops_config']))
 
-    app.register_blueprint(slack.app, url_prefix = '/slack')
+    app.register_blueprint(SlackController.app, url_prefix = '/slack')
 
     return app
