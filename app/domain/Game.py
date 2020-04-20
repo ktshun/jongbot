@@ -14,6 +14,7 @@ class Game:
         self.member = 3 if is_sanma else 4
         self.round = round
         self.round_number = randrange(self.member)
+
         self.wall = Wall(is_sanma, include_red[0], include_red[1], include_red[2])
         self.hands = self.wall.deal()
 
