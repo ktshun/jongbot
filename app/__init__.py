@@ -4,14 +4,15 @@ from flask import Flask
 from app.controller import SlackController
 
 
-def create_app(test_config=None):
+def create_app():
     # create and configure the app
     app = Flask(__name__)
 
     # Load config files
-    #app.config.from_pyfile("config/base_config.py")
-    #if "ops_config" in os.environ:
-    #    app.config.from_pyfile("config/%s_config.py" % (os.environ['ops_config']))
+    app.config.from_pyfile("config/baseConfig.py")
+    env = os.getenv('FLASK_ENV', None)
+    if env != None:
+        app.config.from_pyfile("config/%sConfig.py" % env)
 
     app.register_blueprint(SlackController.app, url_prefix = '/slack')
 
