@@ -14,5 +14,5 @@ def format_to_image(hand: List[Tile]):
 def format_to_stamp(hand: List[Tile]):
     formatted = '';
     for tile in hand:
-        formatted += ' :{}: '.format(tile.get_string())
+        formatted += ':{}:'.format(tile.get_string())
     return formatted
