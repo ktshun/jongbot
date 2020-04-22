@@ -16,7 +16,7 @@ class TileType(Enum):
         elif self == TileType.ZIHAI:
             return 'z'
 
-    def get_tile_list(self, include_red: bool=False, is_samma: bool=False) -> list:
+    def get_tile_list(self, is_samma: bool=False, include_red: bool=False) -> list:
         if self == TileType.ZIHAI:
             raw_list = [1,2,3,4,5,6,7] * 4
         elif self == TileType.MANZU and is_samma:

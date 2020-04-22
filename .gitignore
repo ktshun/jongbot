@@ -1,3 +1,6 @@
+## Mac
+.DS_Store
+
 ## Intellij
 .idea
 *.iml
@@ -8,7 +11,7 @@
 # Created by https://www.gitignore.io/api/virtualenv
 # Edit at https://www.gitignore.io/?templates=virtualenv
 
-### flask ### 
+### flask ###
 *.pyc
 __pycache__/
 
