@@ -12,4 +12,4 @@ steps:
     ]
 options:
   env:
-    - 'VERSION_TAG=v0.0.1'
+    - 'VERSION_TAG=v0.0.2'
