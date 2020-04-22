@@ -1,0 +1,15 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args: [ '-c',
+            'gcloud run deploy jongbot
+            --image gcr.io/$_IMAGE_HOST_PROJECT_ID/jongbot:$$VERSION_TAG
+            --region asia-northeast1
+            --platform managed
+            --memory 256M
+            --port 8080
+            --allow-unauthenticated'
+    ]
+options:
+  env:
+    - 'VERSION_TAG=v0.0.1'
