@@ -2,12 +2,13 @@ from app.domain.Round import Round
 from app.domain.Wall import Wall
 from app.domain.Wind import Wind
 from random import randrange
+from typing import List
 
 class Game:
     def __init__(
         self,
         is_sanma: bool=False,
-        include_red: list=[False, False, False],
+        include_red: List[bool]=[False, False, False],
         round: Round=Round.EAST,
         round_number: int=1
     ):
